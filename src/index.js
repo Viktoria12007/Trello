@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from './redux/state';
+// import { dragStartHandler, dragLeaveHandler, dragEndHandler, dragOverHandler, dropHandler } from './redux/state';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App  state = {state}
+    // dragStartHandler = { dragStartHandler } 
+    // dragLeaveHandler = { dragLeaveHandler } dragEndHandler = { dragEndHandler }
+    // dragOverHandler = { dragOverHandler } dropHandler = { dropHandler }
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
